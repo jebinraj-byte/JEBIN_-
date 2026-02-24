@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>JebinLab</title>
 
 <link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 </head>
 
 <body>
 
 
+
 <!-- Loading Screen -->
 
 <div id="loader">
 
-<h1>JEBINLAB</h1>
+<div class="logoLoad">
+
+JEBINLAB
 
 </div>
+
+</div>
+
+
+
+<!-- Particles -->
+
+<div id="particles-js"></div>
+
 
 
 <!-- Navbar -->
@@ -30,88 +43,188 @@
 
 <img src="logo.png" class="logo">
 
-<ul>
 
-<li><a href="#home">Home</a></li>
+<div class="menu">
 
-<li><a href="#about">About</a></li>
+<a href="#home">Home</a>
 
-<li><a href="#work">Work</a></li>
+<a href="#about">About</a>
 
-<li><a href="#contact">Contact</a></li>
+<a href="#work">Work</a>
 
-</ul>
+<a href="#contact">Contact</a>
+
+</div>
 
 </nav>
 
 
-<!-- Home -->
+
+<!-- HERO -->
 
 <section id="home">
 
-<h1>Welcome to JebinLab</h1>
+<h1 class="title">
 
-<p>Cyber Security | Tech | Innovation</p>
+JEBINLAB
+
+</h1>
+
+<p class="subtitle">
+
+Future Cyber Security Engineer
+
+</p>
+
+<button onclick="scrollToAbout()">
+
+Explore
+
+</button>
 
 </section>
 
 
-<!-- About -->
+
+
+<!-- ABOUT -->
 
 <section id="about">
 
 <h1>About Me</h1>
 
-<p>
+<div class="glass">
 
-Hi I am Jebin.
+Cyber Security Student
 
-I build servers and cool tech projects.
+<br><br>
 
-</p>
+Server Builder
+
+<br><br>
+
+Tech Creator
+
+<br><br>
+
+Future Innovator
+
+</div>
 
 </section>
 
 
-<!-- Work -->
+
+<!-- WORK -->
 
 <section id="work">
 
 <h1>My Work</h1>
 
-<p>
+
+<div class="grid">
+
+
+<div class="box">
 
 Servers
 
+</div>
+
+
+<div class="box">
+
 Cyber Security
+
+</div>
+
+
+<div class="box">
 
 Websites
 
-</p>
+</div>
+
+
+<div class="box">
+
+AI Projects
+
+</div>
+
+
+</div>
 
 </section>
 
 
-<!-- Contact -->
+
+<!-- CONTACT -->
 
 <section id="contact">
 
 <h1>Contact</h1>
 
-<p>
+<div class="glass">
 
-Email:
+Email
 
-jebinlab@gmail.com
+<br>
+
+santhoshjebinraj@gmail.com
+
+<br><br>
+
+Mobile
+
+<br>
+
+7708791862
+
+</div>
+
+
+<p id="counter">
+
+Visitors loading
 
 </p>
+
 
 </section>
 
 
 
-<script src="script.js"></script>
 
+<!-- AI CHAT -->
+
+<div id="chat">
+
+<div id="chatTop">
+
+AI Assistant
+
+</div>
+
+<div id="chatText">
+
+Ask me anything
+
+</div>
+
+<input id="msg">
+
+<button onclick="send()">
+
+Send
+
+</button>
+
+</div>
+
+
+
+<script src="script.js"></script>
 
 </body>
 
