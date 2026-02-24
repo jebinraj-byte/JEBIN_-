@@ -1,231 +1,77 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Jebin</title>
-
-<link rel="stylesheet" href="style.css">
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEBINLAB | Cyber Security</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 </head>
-
 <body>
 
-
-
-<!-- Loading Screen -->
-
-<div id="loader">
-
-<div class="logoLoad">
-
-JEBIN
-
-</div>
-
-</div>
-
-
-
-<!-- Particles -->
-
-<div id="particles-js"></div>
-
-
-
-<!-- Navbar -->
-
-<nav>
-
-<img src="logo.png" class="logo">
-
-
-<div class="menu">
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#work">Work</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-</nav>
-
-
-
-<!-- HERO -->
-
-<section id="home">
-
-<h1 class="title">
-
-JEBINLAB
-
-</h1>
-
-<p class="subtitle">
-
-Future Cyber Security Engineer
-
-</p>
-
-<button onclick="scrollToAbout()">
-
-Explore
-
-</button>
-
-</section>
-
-
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<h1>About Me</h1>
-
-<div class="glass">
-
-Cyber Security Student
-
-<br><br>
-
-Server Builder
-
-<br><br>
-
-Tech Creator
-
-<br><br>
-
-Future Innovator
-
-</div>
-
-</section>
-
-
-
-<!-- WORK -->
-
-<section id="work">
-
-<h1>My Work</h1>
-
-
-<div class="grid">
-
-
-<div class="box">
-
-Servers
-
-</div>
-
-
-<div class="box">
-
-Cyber Security
-
-</div>
-
-
-<div class="box">
-
-Websites
-
-</div>
-
-
-<div class="box">
-
-AI Projects
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<h1>Contact</h1>
-
-<div class="glass">
-
-Email
-
-<br>
-
-santhoshjebinraj@gmail.com
-
-<br><br>
-
-Mobile
-
-<br>
-
-7708791862
-
-</div>
-
-
-<p id="counter">
-
-Visitors loading
-
-</p>
-
-
-</section>
-
-
-
-
-<!-- AI CHAT -->
-
-<div id="chat">
-
-<div id="chatTop">
-
-AI Assistant
-
-</div>
-
-<div id="chatText">
-
-Ask me anything
-
-</div>
-
-<input id="msg">
-
-<button onclick="send()">
-
-Send
-
-</button>
-
-</div>
-
-
-
-<script src="script.js"></script>
-
+    <div id="loader">
+        <div class="logoLoad">JEBIN</div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <nav>
+        <img src="logo.png" class="logo">
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#work">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h1 class="title">JEBIN<span style="color:cyan;">LAB</span></h1>
+        <p class="subtitle">Defending the Digital Frontier</p>
+        <button class="glow-button" onclick="scrollToAbout()">EXPLORE SYSTEM</button>
+    </section>
+
+    <section id="about">
+        <h1 class="section-header">SEC_PROFILE</h1>
+        <div class="glass" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <p>> First Year Cyber Security Student [MCET]</p>
+            <p>> Specialized in Server Architecture</p>
+            <p>> Operating System Hardening Expert</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <h1 class="section-header">PROJECT_LOGS</h1>
+        <div class="grid">
+            <div class="box" data-tilt>
+                <h3>SERVERS</h3>
+                <p>TrueNAS & Nextcloud Deployment</p>
+            </div>
+            <div class="box" data-tilt>
+                <h3>CYBER OPS</h3>
+                <p>Kali Linux VM & Network Security</p>
+            </div>
+            <div class="box" data-tilt>
+                <h3>WEB DEV</h3>
+                <p>Secure Static Architectures</p>
+            </div>
+            <div class="box" data-tilt>
+                <h3>HARDWARE</h3>
+                <p>System Optimization & RAM Config</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="section-header">UPLINK</h1>
+        <div class="glass contact-card">
+            <p>EMAIL: santhoshjebinraj@gmail.com</p>
+            <p>MOBILE: +91 7708791862</p>
+            <div id="counter">Initializing...</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
